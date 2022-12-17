@@ -1,0 +1,80 @@
+@import 'nullstyle';
+
+$maxWidth: 1600;
+$mainColor: #254F4C;
+$mainTextColor: #1D3130;
+$hoverColor: aquamarine;
+$orangeColor: #FF583E;
+
+.active{
+  color: $orangeColor!important;
+}
+
+.header__container{
+  margin-top: 24px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .header__logo{
+    display: flex;
+    flex-direction: row;
+    .logo__img{
+      width: 32px;
+      margin-right: 8px;
+    }
+    .logo__content{
+      align-self: center;
+      color: $mainTextColor;
+      .logo__title{
+        font-size: 20px;
+        font-weight: 700;
+        color: $mainColor;
+      }
+    }
+  }
+  .header__menu{
+    display: flex;
+    .menu__list{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .menu__item{
+        &:not(:last-child){
+          margin-right: 60px;
+        }
+        .menu__link{
+          color: $mainTextColor;
+          line-height: 19px;
+          &:hover{
+            color: $hoverColor;
+          }
+        }
+      }
+    }
+  }
+  .header__phone{
+    display: flex;
+    align-items: center;
+    color: $mainTextColor;
+    font-size: 16px;
+    padding-left: 30px;
+    .phone__img{
+        margin-right: 8px;
+    }
+  }
+  .header__basket{
+    display: flex;
+    align-items: center;
+    .basket__button{
+      width: 48px;
+      background-color: transparent;
+      font-size: 20px;
+      line-height: 23px;
+      color: $orangeColor;
+      & img{
+        margin-right: 8px;
+      }
+    }
+  }
+}
