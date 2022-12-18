@@ -1,0 +1,58 @@
+.card{
+    padding: 0 16px;
+    width: 264px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:not(:nth-of-type(4n)){
+    margin-right: 32px;
+}
+
+.card__img{
+    height: 100px;
+}
+
+.card__img img{
+    position: relative;
+    bottom: 45px;
+}
+
+.card__title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 16px 0 8px 0;
+}
+.card__text{
+    width: 231px;
+    font-size: 14px;
+    text-align: center;
+}
+.card__price{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.count{
+    display: flex;
+    margin: 8px 0 16px 0;
+}
+
+.count__button{
+    background-color: transparent;
+}
+
+.count__number{
+    width: 32px;
+    text-align: center;
+    color: inherit;
+    font-size: 15px;
+    line-height: 18px;
+}
