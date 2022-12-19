@@ -8,10 +8,6 @@
     justify-content: center;
 }
 
-.card:not(:nth-of-type(4n)){
-    margin-right: 32px;
-}
-
 .card__img{
     height: 100px;
 }

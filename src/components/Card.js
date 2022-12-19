@@ -28,7 +28,7 @@ const Card = (props) => {
             </div>
             <h5 className={styles.card__title}>{props.title}</h5>
             <p className={styles.card__text}>{props.content}</p>
-            <p className={styles.card__price}>{props.price}</p>
+            <p className={styles.card__price}>{props.price} сом</p>
             <Count/>
             <Button color={props.colorBtn} content='в корзину'/>
         </div>

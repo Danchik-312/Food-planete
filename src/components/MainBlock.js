@@ -1,6 +1,5 @@
 import React from 'react';
-import burger from '../assets/images/burger.svg';
-import cola from '../assets/images/cola.svg';
+import main from '../assets/images/main.svg';
 
 const MainBlock = () => {
     return (
@@ -24,8 +23,7 @@ const MainBlock = () => {
                     </button>
                 </div>
                 <div className="main__images">
-                    <img src={burger} alt="burger" className="main__images__burger" />
-                    <img src={cola} alt="coca-cola" className="main__images__cola" />
+                    <img src={main} alt="price" className='main__images__price' />
                 </div>
             </div>
         </section>

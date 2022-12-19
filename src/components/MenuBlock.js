@@ -34,6 +34,7 @@ const MenuBlock = () => {
                             })
                         }
                     </div>
+                    {/*Кнопка перехода к меню*/}
                 </div>
             </div>
         </section>
