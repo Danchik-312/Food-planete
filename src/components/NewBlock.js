@@ -13,6 +13,7 @@ const NewBlock = () => {
                        burgers.map((item) => {
                            return (
                                <Card
+                                    key={item.id}
                                     color='green'
                                     img={item.img}
                                     title={item.title}

@@ -26,7 +26,7 @@
 }
 
 .menu__link:hover{
-    color: aquamarine;
+    opacity: 0.5;
 }
 
 .menu__null{

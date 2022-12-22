@@ -9,12 +9,9 @@
 }
 
 .card__img{
+    display: flex;
+    align-items: flex-end;
     height: 100px;
-}
-
-.card__img img{
-    position: relative;
-    bottom: 45px;
 }
 
 .card__title{
@@ -22,11 +19,13 @@
     font-size: 20px;
     line-height: 23px;
     margin: 16px 0 8px 0;
+    color: inherit;
 }
 .card__text{
     width: 231px;
     font-size: 14px;
     text-align: center;
+    color: inherit;
 }
 .card__price{
     margin-top: 15px;

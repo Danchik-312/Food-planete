@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from "./NavBar";
 import Card from "./Card";
 import pizza from "../data/pizza";
+import Button from "./Button";
 
 const MenuBlock = () => {
     return (
@@ -13,9 +14,6 @@ const MenuBlock = () => {
                         <p className='menu__text'>Сортировка по:</p>
                         <select name="sort" id="sort" className="menu__select">
                             <option value="standart" selected>По умолчанию</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
                         </select>
                     </div>
                     <div className="menu__content__items">
@@ -23,6 +21,7 @@ const MenuBlock = () => {
                             pizza.map((item) => {
                                 return (
                                     <Card
+                                        key={item.id}
                                         color='white'
                                         img={item.img}
                                         title={item.title}
@@ -34,7 +33,11 @@ const MenuBlock = () => {
                             })
                         }
                     </div>
-                    {/*Кнопка перехода к меню*/}
+                    {
+                        pizza.length > 8
+                            ? <Button color="wh" content='Показать ещё' svg='none'/>
+                            : false
+                    }
                 </div>
             </div>
         </section>

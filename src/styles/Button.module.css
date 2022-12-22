@@ -1,0 +1,13 @@
+.btn {
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding: 12px 38px 12px 35px;
+}
+
+.btn svg{
+    margin-left: 7px;
+}

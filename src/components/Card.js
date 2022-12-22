@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Button from "./Button";
+import CardButton from "./CardButton";
 import styles from '../styles/Card.module.css';
 import minusImg from '../assets/icons/minus.svg';
 import plusImg from '../assets/icons/plus.svg';
@@ -24,13 +24,13 @@ const Card = (props) => {
     return (
         <div className={`${styles.card} ${props.color}`}>
             <div className={styles.card__img}>
-                <img src={props.img} alt="cheeseburger" />
+                <img src={`./image/${props.img}`} alt={props.img} />
             </div>
             <h5 className={styles.card__title}>{props.title}</h5>
             <p className={styles.card__text}>{props.content}</p>
             <p className={styles.card__price}>{props.price} сом</p>
             <Count/>
-            <Button color={props.colorBtn} content='в корзину'/>
+            <CardButton color={props.colorBtn} content='в корзину'/>
         </div>
     );
 };

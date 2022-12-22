@@ -23,6 +23,7 @@ const FavoriteBlock = () => {
                         favorites.map((item) => {
                             return (
                                 <FavoriteItem
+                                    key={item.id}
                                     img={item.img}
                                     title={item.title}
                                     content={item.content}

@@ -31,6 +31,7 @@ const ReviewsBlock = () => {
                         reviews.map((item) => {
                             return (
                                 <ReviewsItem
+                                    key={item.id}
                                     img={item.img}
                                     title={item.title}
                                     content={item.content}

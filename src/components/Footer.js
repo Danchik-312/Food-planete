@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer__logo logo">
                     <img src={logo} alt="logo"/>
                     <div className="logo__content">
-                        <h5 className="logo__title">FOOD PLANETE</h5>
+                        <h5 className="logo__title">FOOD PLANET</h5>
                         <h6 className="logo_subtitle">Планета вкусной еды</h6>
                     </div>
                 </div>

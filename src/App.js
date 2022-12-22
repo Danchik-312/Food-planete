@@ -11,13 +11,13 @@ const App = () => {
     return (
         <div className='wrapper'>
             <Header/>
-            <main className="page">
+            <div className="page">
                 <MainBlock/>
                 <NewBlock/>
                 <MenuBlock/>
                 <FavoriteBlock/>
                 <ReviewsBlock/>
-            </main>
+            </div>
             <Footer/>
         </div>
     );
