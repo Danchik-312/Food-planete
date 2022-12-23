@@ -146,6 +146,9 @@ $orangeColor: #FF583E;
         &:hover > .dropdown__content{
           display: flex;
         }
+        &:hover > img{
+          transform: rotate(180deg);
+        }
       }
       .menu__item{
         &:not(:last-child){

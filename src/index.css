@@ -254,6 +254,10 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
 }
+.header__container .header__menu .menu__list .menu__dropdown:hover > img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .header__container .header__menu .menu__list .menu__item:not(:last-child) {
   margin-right: 60px;
 }
