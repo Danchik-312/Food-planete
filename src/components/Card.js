@@ -9,10 +9,10 @@ const Count = () => {
 
     return (
         <div className={styles.count}>
-            <button onClick={()=> Counter > 0 ? setCounter(Counter-1) : 0} className={styles.count__button}>
+            <button onClick={()=> Counter > 0 ? setCounter(Counter-1) : null} className={styles.count__button}>
                 <img src={minusImg} alt="minus"/>
             </button>
-            <p className={styles.count__number}>{Counter}</p>
+            <input type='number' className={styles.count__number} value={Counter} min='0' max='100' readOnly/>
             <button onClick={()=> setCounter(Counter+1)} className={styles.count__button}>
                 <img src={plusImg} alt="plus"/>
             </button>

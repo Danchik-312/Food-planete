@@ -8,6 +8,9 @@ $orangeColor: #FF583E;
 
 .active{
   color: $orangeColor!important;
+  &:hover{
+    opacity: 1!important;
+  }
 }
 
 .green{
@@ -28,7 +31,9 @@ $orangeColor: #FF583E;
   line-height: 21px;
   text-transform: uppercase;
   padding: 12px 56px;
+  transition: all 0.5s;
   & svg {
+    fill: $orangeColor!important;
     margin-left: 7px;
   }
 }
@@ -38,8 +43,7 @@ $orangeColor: #FF583E;
   border: 1px solid #FF583E;
   background-color: #FF583E;
   &:hover {
-    color: #FF583E;
-    background-color: #fff;
+    opacity: 0.8;
   }
 }
 
@@ -47,8 +51,7 @@ $orangeColor: #FF583E;
   border: 1px solid #254F4C;
   background-color: #254F4C;
   &:hover {
-    color: #254F4C;
-    background-color: #fff;
+    opacity: 0.8;
   }
 }
 
@@ -105,6 +108,7 @@ $orangeColor: #FF583E;
     .logo__img{
       width: 32px;
       margin-right: 8px;
+      fill: #246864;
     }
     .logo__content{
       align-self: center;
@@ -124,11 +128,13 @@ $orangeColor: #FF583E;
       align-items: center;
       .menu__dropdown{
         position: relative;
-        transition: all 0.5s;
         & img{
+          transition: all 0.5s;
           margin-left: 8px;
         }
         .dropdown__content{
+          background-color: white;
+          transition: all 0.5s;
           position: absolute;
           left: 0;
           top: 100%;
@@ -141,6 +147,11 @@ $orangeColor: #FF583E;
             text-align: center;
             width: 100px;
             padding: 10px 0;
+            & .dropdown__link:hover{
+              padding-bottom: 5px;
+              border-bottom: 2px solid $mainColor;
+              transition: all 0.3s ease;
+            }
           }
         }
         &:hover > .dropdown__content{
@@ -165,6 +176,7 @@ $orangeColor: #FF583E;
     padding-left: 30px;
     .phone__img{
         margin-right: 8px;
+        fill: $mainTextColor;
     }
   }
   .header__basket{
@@ -176,8 +188,13 @@ $orangeColor: #FF583E;
       font-size: 20px;
       line-height: 23px;
       color: $orangeColor;
-      & img{
+      & svg{
+        fill: $mainTextColor;
         margin-right: 8px;
+        transition: all 0.5s;
+      }
+      &:hover svg{
+        fill: red;
       }
     }
   }
@@ -394,6 +411,9 @@ $orangeColor: #FF583E;
     justify-content: space-between;
     .footer__logo{
       display: flex;
+      & svg{
+        fill: white;
+      }
       .logo__content{
         margin-left: 8px;
         color: white;
@@ -419,11 +439,13 @@ $orangeColor: #FF583E;
         .menu__item{
           color: white;
           line-height: 19px;
+          & svg{
+            fill: white;
+            margin-right: 8px;
+            vertical-align: bottom;
+          }
           &:not(:last-child){
             margin-right: 60px;
-          }
-          & img{
-            margin-right: 8px;
           }
           .menu__link{
             color: white;

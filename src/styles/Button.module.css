@@ -6,8 +6,14 @@
     line-height: 21px;
     text-transform: uppercase;
     padding: 12px 38px 12px 35px;
+    transition: all 0.5s;
 }
 
 .btn svg{
+    stroke: white;
     margin-left: 7px;
 }
+
+/*.btn:hover svg{*/
+/*    stroke: #FF583E;*/
+/*}*/

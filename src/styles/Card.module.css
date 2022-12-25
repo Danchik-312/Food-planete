@@ -45,9 +45,15 @@
 }
 
 .count__number{
+    background-color: transparent;
     width: 32px;
     text-align: center;
     color: inherit;
     font-size: 15px;
     line-height: 18px;
+}
+
+.count__number:hover, .count__number:active, .count__number:focus{
+    outline: none;
+    border: 0;
 }

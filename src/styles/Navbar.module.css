@@ -26,6 +26,7 @@
 }
 
 .menu__link:hover{
+    transition: all 0.5s;
     opacity: 0.5;
 }
 
