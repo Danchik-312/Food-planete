@@ -11,5 +11,5 @@ ul li{list-style: none;}
 img{vertical-align: middle;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;}
 .wrapper{min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}
-._container{max-width: 1160px;margin: 0 auto;box-sizing: border-box}
+._container{max-width: 1160px;margin: 0 auto;padding: 0 15px; box-sizing: border-box}
 .page{flex: 1 1 auto;}
