@@ -1,43 +1,19 @@
 import React from 'react';
-import Header from "./components/Header";
-import MainBlock from "./components/MainBlock";
-import NewBlock from "./components/NewBlock";
-import MenuBlock from "./components/MenuBlock";
-import FavoriteBlock from "./components/FavoriteBlock";
-import ReviewsBlock from "./components/ReviewsBlock";
-import BasketBlock from "./components/BasketBlock";
-import Footer from "./components/Footer";
-
-const MainPage = () => {
-    return (
-        <div className='wrapper'>
-            <Header/>
-            <div className="page">
-                <MainBlock/>
-                <NewBlock/>
-                <MenuBlock/>
-                <FavoriteBlock/>
-                <ReviewsBlock/>
-            </div>
-            <Footer/>
-        </div>
-    );
-};
-
-const BasketPage = () => {
-    return (
-        <div className="wrapper">
-            <Header/>
-            <div className="page">
-                <BasketBlock/>
-            </div>
-            <Footer/>
-        </div>
-    );
-};
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import MainPage from "./pages/mainPage/MainPage";
+import BasketPage from "./pages/basketPage/BasketPage";
+import OrderingPage from "./pages/orderingPage/OrderingPage";
 
 const App = () => {
-    return <MainPage/>
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<MainPage/>} />
+                <Route path='/basket' element={<BasketPage/>} />
+                <Route path='/ordering' element={<OrderingPage/>} />
+            </Routes>
+        </BrowserRouter>
+    )
 };
 
 export default App;

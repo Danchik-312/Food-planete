@@ -36,7 +36,7 @@ const MenuBlock = () => {
                     {
                         pizza.length > 8
                             ? <Button color="wh" content='Показать ещё' svg='none'/>
-                            : false
+                            : null
                     }
                 </div>
             </div>

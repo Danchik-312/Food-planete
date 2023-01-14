@@ -304,6 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__container .header__basket .basket__button {
   width: 48px;
+  position: relative;
   background-color: transparent;
   font-size: 20px;
   line-height: 23px;
@@ -315,8 +316,64 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.header__container .header__basket .basket__button:hover svg {
+.header__container .header__basket .basket__button .button__inner {
+  width: 250px;
+  padding: 10px 10px 8px;
+  border: 1px solid #C4C4C4;
+  background-color: white;
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 25px;
+  top: auto;
+  border-radius: 20px 0 20px 20px;
+}
+.header__container .header__basket .basket__button .button__inner .inner__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #254F4C;
+}
+.header__container .header__basket .basket__button .button__inner .inner__count {
+  text-align: center;
+  font-size: 14px;
+  color: #1D3130;
+}
+.header__container .header__basket .basket__button .button__inner .inner__place {
+  border-top: 1px solid #1D3130;
+  padding: 5px 0;
+}
+.header__container .header__basket .basket__button .button__inner .inner__place .inner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #254F4C;
+  font-size: 16px;
+  border-bottom: 1px solid #1D3130;
+}
+.header__container .header__basket .basket__button .button__inner .inner__place .inner__item .inner__btn {
+  background-color: transparent;
+}
+.header__container .header__basket .basket__button .button__inner .inner__place .inner__item .inner__btn:hover svg {
   fill: red;
+}
+.header__container .header__basket .basket__button .button__inner .inner__link {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: white;
+}
+.header__container .header__basket .basket__button:hover .button__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page__main-block {
