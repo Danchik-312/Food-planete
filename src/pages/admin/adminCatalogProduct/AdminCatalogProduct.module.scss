@@ -1,0 +1,25 @@
+@import '../../../index.scss';
+
+.card{
+  width: 250px;
+  height: 250px;
+  padding: 25px;
+  margin: 15px;
+  background-color: $mainTextColor;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease, 0.5s;
+
+  &:hover{
+    opacity: 0.8;
+    color: black;
+  }
+}
+
+.admin__container{
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}

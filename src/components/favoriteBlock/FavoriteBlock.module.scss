@@ -1,0 +1,51 @@
+@import '../../index.scss';
+
+.page__favoriteblock {
+  padding: 42px 0 56px 0;
+
+  .favorite__container {
+    .favorite__title {
+      margin-bottom: 42px;
+    }
+
+    .favorite__content {
+      display: flex;
+
+      .favorite__item {
+        width: 256px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-right: 32px;
+        }
+
+        .favorite__item__img {
+          margin-bottom: 16px;
+          width: 88px;
+          height: 88px;
+          border: 2px solid $mainColor;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .favorite__item__title {
+          margin-bottom: 8px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+          color: $mainColor;
+        }
+
+        .favorite__item__content {
+          font-size: 14px;
+          color: $mainTextColor;
+        }
+      }
+    }
+  }
+}

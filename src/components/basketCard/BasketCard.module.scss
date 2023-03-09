@@ -1,0 +1,82 @@
+@import '../../index.scss';
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $mainColor;
+  min-height: 70px;
+
+  .card__title {
+    width: 320px;
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+
+    & p{
+      color: $mainTextColor;
+      padding: 0 16px;
+      margin-left: 8px;
+    }
+
+    .card__img{
+      padding: 0 15px;
+    }
+  }
+
+  .card__count{
+    padding: 0 19px;
+    width: 33%;
+
+    & input{
+      width: 143px;
+      border: 1px solid #254F4C;
+      border-radius: 5px;
+      height: 35px;
+      padding: 21px 25px;
+      font-size: 14px;
+      line-height: 100%;
+      color: #1D3130;
+      font-family: Roboto serif;
+      overflow: visible;
+      transition: 0.5s;
+
+      &:focus{
+        box-shadow: 0 0 0 0.2rem $mainTextColor;
+        outline: none;
+      }
+    }
+  }
+
+  .card__price{
+    padding: 0 15px;
+    width: 290px;
+    flex-grow: 1;
+    font-size: 18px;
+    line-height: 120%;
+    color: $mainTextColor;
+  }
+
+  .card__topay{
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    flex-grow: 1;
+
+    & p{
+      align-self: flex-start;
+      margin-right: 10px;
+      padding: 0 12px;
+    }
+
+    .card__btn{
+      align-self: flex-end;
+      background-color: transparent;
+      margin: 0 24px 0 19px;
+      fill: #254F4C;
+    }
+  }
+}
+

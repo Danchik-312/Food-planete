@@ -1,0 +1,88 @@
+@import './scss/nullstyle.scss';
+
+$maxWidth: 1600;
+$mainColor: #254F4C;
+$mainTextColor: #1D3130;
+$hoverColor: aquamarine;
+$orangeColor: #FF583E;
+
+.active{
+  color: $orangeColor!important;
+
+  &:hover{
+    opacity: 1!important;
+  }
+}
+
+.green{
+  border: 1px solid $mainColor;
+  background-color: $mainColor;
+  color: #fff;
+
+  &:not(:last-child){
+    margin-right: 16px;
+  }
+}
+
+.white{
+  margin-top: 94px!important;
+  color: $mainTextColor!important;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  &:not(:nth-of-type(4n)){
+    margin: 0 16px 0 0;
+  }
+  & h5{
+    color: $mainColor!important;
+  }
+}
+
+.orange {
+  border: 1px solid #FF583E;
+  background-color: #FF583E;
+  &:hover {
+    background-color: white;
+    color: $orangeColor;
+  }
+
+  &:hover svg{
+    stroke: $orangeColor;
+  }
+}
+
+.gr {
+  border: 1px solid #254F4C;
+  background-color: #254F4C;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.wh{
+  margin-top: 43px;
+  padding: 12px 56px!important;
+  align-self: center;
+  background-color: white;
+  color: $orangeColor!important;
+  border: 1px solid $orangeColor;
+  &:hover{
+    background-color: $orangeColor;
+    color: white!important;
+  }
+}
+
+.tl{
+  color: $mainColor;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.menu__link{
+  color: $mainTextColor;
+  line-height: 19px;
+  transition: all 0.5s;
+  &:hover{
+    opacity: 0.5;
+  }
+}

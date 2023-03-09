@@ -1,0 +1,68 @@
+@import '../../index.scss';
+
+.footer {
+  background-color: $mainColor;
+  padding: 56px 0;
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    .footer__logo {
+      display: flex;
+      & svg{
+        fill: white;
+      }
+
+      .logo__content {
+        margin-left: 8px;
+        color: white;
+
+        .logo__title {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+        }
+
+        .logo_subtitle {
+          line-height: 19px;
+        }
+      }
+    }
+
+    .footer__menu {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .menu__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .menu__item {
+          color: white;
+          line-height: 19px;
+
+          & svg {
+            fill: white;
+            margin-right: 8px;
+            vertical-align: bottom;
+          }
+
+          &:not(:last-child) {
+            margin-right: 60px;
+          }
+
+          .menu__link {
+            color: white;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+  }
+}

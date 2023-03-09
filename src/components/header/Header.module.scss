@@ -1,0 +1,169 @@
+@import '../../index.scss';
+
+.header{
+  padding-top: 24px;
+}
+
+.header__container{
+  min-height: 40px!important;
+  display: flex;
+  justify-content: space-between;
+  .header__logo{
+    display: flex;
+    flex-direction: row;
+    .logo__img{
+      width: 32px;
+      margin-right: 8px;
+      fill: #246864;
+    }
+    .logo__content{
+      align-self: center;
+      color: $mainTextColor;
+      .logo__title{
+        font-size: 20px;
+        font-weight: 700;
+        color: $mainColor;
+      }
+    }
+  }
+  .header__menu{
+    display: flex;
+    .menu__list{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .menu__dropdown{
+        position: relative;
+        & img{
+          transition: all 0.5s;
+          margin-left: 8px;
+        }
+        .dropdown__content{
+          margin: 0;
+          padding: 0;
+          background-color: white;
+          transition: all 0.5s;
+          position: absolute;
+          left: 0;
+          top: 100%;
+          display: none;
+          flex-direction: column;
+          border: 1px solid #C4C4C4;
+          border-radius: 0 20px 20px 20px;
+          & li{
+            align-self: center;
+            text-align: center;
+            width: 100px;
+            padding: 10px 0;
+            & .dropdown__link:hover{
+              opacity: 0.5;
+              padding-bottom: 5px;
+              border-bottom: 2px solid $mainColor;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+        &:hover .dropdown__content{
+          display: flex;
+        }
+        &:hover img{
+          transform: rotate(180deg);
+        }
+      }
+      .menu__item{
+        &:not(:last-child){
+          margin-right: 60px;
+        }
+      }
+    }
+  }
+  .header__phone{
+    display: flex;
+    align-items: center;
+    color: $mainTextColor;
+    font-size: 16px;
+    padding-left: 30px;
+    .phone__img{
+      margin-right: 8px;
+      fill: $mainTextColor;
+    }
+  }
+  .header__basket{
+    display: flex;
+    align-items: center;
+    .basket__button{
+      width: 48px;
+      position: relative;
+      background-color: transparent;
+      font-size: 20px;
+      line-height: 23px;
+      color: $orangeColor;
+      & svg{
+        fill: $mainTextColor;
+        margin-right: 8px;
+        transition: all 0.5s;
+      }
+
+      .button__inner{
+        width: 250px;
+        padding: 10px 10px 8px;
+        border: 1px solid #C4C4C4;
+        background-color: white;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        right: 25px;
+        top: auto;
+        border-radius: 20px 0 20px 20px;
+
+        .inner__title{
+          text-align: center;
+          font-size: 16px;
+          font-weight: 600;
+          color: #254F4C;
+        }
+
+        .inner__count{
+          text-align: center;
+          font-size: 14px;
+          color: #1D3130;
+        }
+
+        .inner__place{
+          border-top: 1px solid #1D3130;
+          padding: 5px 0;
+
+          .inner__item{
+            display: flex;
+            padding: 10px 0;
+            justify-content: space-between;
+            color: #254F4C;
+            font-size: 16px;
+            border-bottom: 1px solid #1D3130;
+
+            .inner__btn{
+              background-color: transparent;
+
+              &:hover svg{
+                fill: red;
+              }
+            }
+          }
+
+        }
+
+        .inner__link{
+          width: 100%;
+          padding: 6px 12px;
+          border-radius: 5px;
+          color: white;
+        }
+      }
+      &:hover .button__inner{
+        display: flex;
+      }
+    }
+  }
+}

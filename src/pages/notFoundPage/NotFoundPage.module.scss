@@ -1,0 +1,54 @@
+@import '../../index.scss';
+
+.page__error{
+  margin: 100px;
+
+  .error__container{
+    width: 830px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .error__text{
+      margin: 24px 16px;
+      flex-basis: 60%;
+      font-size: 16px;
+      line-height: 1.4;
+      font-weight: 300;
+
+      .error__text__title{
+        font-size: 58px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 16px;
+        word-wrap: break-word;
+      }
+
+      .error__message__container{
+        margin-right: 70px;
+
+        .error__message{
+          margin-bottom: 48px;
+        }
+
+        .error__button{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 500;
+          background-color: $mainColor;
+          color: white;
+          font-size: 16px;
+          border-radius: 5px;
+          height: 40px;
+          width: 380px;
+          transition: 0.5s;
+          text-transform: uppercase;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

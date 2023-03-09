@@ -1,0 +1,37 @@
+@import '../../index.scss';
+
+.page__mainblock {
+  padding: 56px 0 33px 0;
+  .main__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main__content {
+      .main__title {
+        width: 403px;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 42px;
+        color: $mainColor;
+      }
+
+      .main__text {
+        margin: 16px 0;
+        width: 416px;
+        line-height: 24px;
+        color: $mainTextColor;
+
+        .btn {
+          padding: 12px 35px 13px !important;
+        }
+      }
+    }
+
+    .main__images {
+      display: flex;
+      justify-content: flex-end;
+      width: 735px;
+    }
+  }
+}

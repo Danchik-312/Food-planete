@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.menu__container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .menu__content {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+
+    .menu__sort {
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+
+      .menu__text {
+        width: 136px;
+        margin-right: 8px;
+        font-size: 14px;
+      }
+
+      .menu__select {
+        appearance: none;
+        cursor: pointer;
+        border: 1px solid #C4C4C4;
+        width: 160px;
+        padding: 12px 23px;
+        background: url('../../assets/icons/arSelectGr.svg') no-repeat right;
+        background-position-x: calc(100% - 25px);
+
+        &:hover, &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .menu__content__items {
+      margin-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}

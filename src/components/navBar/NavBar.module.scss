@@ -1,0 +1,40 @@
+@import '../../index.scss';
+
+.menu{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu__title{
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    color: #1D3130;
+    }
+  .menu__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    .menu__item {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      .menu__link {
+        background-color: transparent;
+        color: $mainTextColor;
+        line-height: 19px;
+
+        &:hover {
+          transition: all 0.5s;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .menu__null{
+    width: 103px;
+  }
+}

@@ -1,0 +1,122 @@
+@import '../../index.scss';
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.basket{
+  .basket__container{
+    .basket__header{
+      margin-top: 48px;
+      text-align: center;
+
+      .basket__title {
+        color: $mainColor;
+        font-size: 50px;
+        line-height: 110%;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .basket__subtitle {
+        font-size: 21px;
+        line-height: 120%;
+        font-weight: 300;
+        color: $mainTextColor;
+        margin-bottom: 8px;
+      }
+    }
+
+    .basket__content {
+      padding: 0 15px;
+
+      .basket__products {
+        display: flex;
+        flex-direction: column;
+
+        .products__title {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 16px;
+          margin-bottom: 8px;
+          border-bottom: 1px solid #254F4C;
+
+          .products__col {
+            padding: 0 15px;
+
+            &:first-child{
+              padding: 0 15px 0 0 !important;
+            }
+
+            &:last-child{
+              width: 160px;
+              padding: 0 0 0 15px !important;
+            }
+
+            & p{
+              font-size: 14px;
+              line-height: 17px;
+              color: #1D3130;
+            }
+          }
+        }
+        .products__content {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .products__price{
+          height: 55px;
+          margin: 24px 0;
+          display: flex;
+          justify-content: flex-end;
+
+          .price__text{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 110%;
+            color: $mainColor;
+            padding: 0 15px;
+            margin-right: 15px;
+          }
+
+          .price{
+            padding: 0 15px;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 120%;
+            color: $mainTextColor;
+          }
+        }
+
+        .basket__btn{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+
+          .basket__design{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            background-color: $mainColor;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            height: 40px;
+            width: 325px;
+            transition: 0.5s;
+            text-transform: uppercase;
+
+            &:hover{
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
